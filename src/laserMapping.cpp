@@ -959,7 +959,7 @@ int main(int argc, char** argv)
             {
                 frame_num ++;
                 kdtree_size_end = ikdtree.size();
-                aver_time_consu = aver_time_consu * (frame_num - 1) / frame_num + (t5 - t0) / frame_num;
+                aver_time_consu = aver_time_consu * (frame_num - 1) / frame_num + (t5 - t0 + s_plot11[scan_count]) / frame_num;
                 aver_time_icp = aver_time_icp * (frame_num - 1)/frame_num + (t_update_end - t_update_start) / frame_num;
                 aver_time_match = aver_time_match * (frame_num - 1)/frame_num + (match_time)/frame_num;
                 aver_time_incre = aver_time_incre * (frame_num - 1)/frame_num + (kdtree_incremental_time)/frame_num;
